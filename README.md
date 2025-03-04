@@ -26,3 +26,7 @@ Bu proje, ajans kurumları için yönetilebilir ve sürdürülebilir bir web sit
 - ✅ **Kullanıcı dostu bir deneyim**
 
 Bu proje, ajans kurumları için iş süreçlerini kolaylaştırmayı hedeflemekte olup, modüler ve genişletilebilir bir yapıya sahiptir. 🎯
+
+# **PROJEDEN KARELER**
+
+
