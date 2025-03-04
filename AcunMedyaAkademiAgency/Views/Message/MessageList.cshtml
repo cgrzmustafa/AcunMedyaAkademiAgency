@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "MessageList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Mesajlar Sayfası</h4>
+            <p class="card-description">
+                Mesajlar ile ilgili işlemleri buradan yapabilirsiniz.
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Adı Soyadı</th>
+                            <th>Email</th>
+                            <th>Başlık</th>
+                            <th>Açıklama</th>
+                            <th>Gönderim Tarihi</th>
+                            <th>Okundu Bilgisi</th>
+                            <th>Sil</th>
+                            <th>Güncelle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            count++;
+                            <tr>
+                                <td>@count</td>
+                                <td>@item.NameSurname</td>
+                                <td>@item.Email</td>
+                                <td>@item.Title</td>
+                                <td>
+                                    @{
+                                        var words = item.Description.Split(' ');
+                                        for (int i = 0; i < words.Length; i++)
+                                        {
+                                            @words[i] @(" ")
+                                            if ((i + 1) % 3 == 0)
+                                            {
+                                                <br />
+                                            }
+                                        }
+                                    }
+                                </td>
+                                <td>@item.SendDate</td>
+                                <td>@item.IsRead</td>
+                                <td><a class="btn btn-danger" href="/Message/DeleteMessage/@item.MessageId"><i class="fa fa-trash"></i>Sil</a></td>
+                                <td><a class="btn btn-success" href="/Message/UpdateMessage/@item.MessageId"><i class="fa fa-pencil"></i>Güncelle</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="/Message/CreateMessage" class="btn btn-info"><i class="mdi mdi-file-check btn-icon-append">Yeni Mesaj Girişi</i></a>
+            </div>
+        </div>
+    </div>
+</div>
+

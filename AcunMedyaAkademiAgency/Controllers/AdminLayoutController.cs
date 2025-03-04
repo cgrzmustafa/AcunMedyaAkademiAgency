@@ -35,11 +35,13 @@ namespace AcunMedyaAkademiAgency.Controllers
         }
         public PartialViewResult NotificationPartial()
         {
+            ViewBag.bildirimsayisi = context.Notifications.ToList().Count();
             var values = context.Notifications.ToList();
             return PartialView(values);
         }
         public PartialViewResult MessagePartial()
         {
+            ViewBag.mesajsayisi = context.Messages.ToList().Count();
             var values = context.Messages.ToList();
             return PartialView(values);
         }

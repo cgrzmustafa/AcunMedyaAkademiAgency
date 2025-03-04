@@ -1,0 +1,34 @@
+﻿@model  AcunMedyaAkademiAgency.Entities.Customer
+@{
+    ViewBag.Title = "UpdateCustomer";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hakkında Güncelleme Sayfası</h4>
+            <p class="card-description">Hakkında ile güncelleme işlemlerini buradan yapabilirsiniz.</p>
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label for="exampleInputName1">Id</label>
+                    @Html.TextBoxFor(x => x.CustomerId, new { @class = "table table-bordered" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Adı Soyadı</label>
+                    @Html.TextBoxFor(x => x.NameSurname, new { @class = "table table-bordered" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputCity1">Resim Yolu</label>
+                    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "table table-bordered" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Katılım Tarihi</label>
+                    @Html.TextBoxFor(x => x.Hour, new { @class = "table table-bordered" })
+                </div>
+                <button type="submit" class="btn btn-primary mr-2"> Güncelle </button>
+                <button class="btn btn-light">Vazgeç</button>
+            </form>
+        </div>
+    </div>
+</div>

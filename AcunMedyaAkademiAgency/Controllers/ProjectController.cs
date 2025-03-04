@@ -42,5 +42,28 @@ namespace AcunMedyaAkademiAgency.Controllers
             context.SaveChanges();
             return RedirectToAction("ProjectList");
         }
+        public ActionResult DeleteProject(int id)
+        {
+            var value = context.Projects.Find(id);
+            context.Projects.Remove(value);
+            context.SaveChanges();
+            return RedirectToAction("ProjectList");
+        }
+        [HttpGet]
+        public ActionResult UpdateProject(int id)
+        {
+            var value = context.Projects.Find(id);
+            return View(value);
+        }
+        [HttpPost]
+        public ActionResult UpdateProject(Project project)
+        {
+            var value = context.Projects.Find(project.ProjectId);
+            value.Title = project.Title;
+            value.ImageUrl = project.ImageUrl;
+            value.CategoryId = project.CategoryId;
+            context.SaveChanges();
+            return RedirectToAction("ProjectList");
+        }
     }
 }

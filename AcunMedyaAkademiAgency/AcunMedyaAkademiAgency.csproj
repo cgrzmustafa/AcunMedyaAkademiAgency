@@ -128,22 +128,32 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\AgencyContext.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MessageController.cs" />
+    <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
+    <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Branch.cs" />
     <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Feature.cs" />
     <Compile Include="Entities\Message.cs" />
     <Compile Include="Entities\Notification.cs" />
     <Compile Include="Entities\Project.cs" />
     <Compile Include="Entities\ProjectDetail.cs" />
     <Compile Include="Entities\Service.cs" />
+    <Compile Include="Entities\SocialMedia.cs" />
     <Compile Include="Entities\Team.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -175,6 +185,30 @@
     <Compile Include="Migrations\202502201139250_mig3.cs" />
     <Compile Include="Migrations\202502201139250_mig3.Designer.cs">
       <DependentUpon>202502201139250_mig3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202503012148169_mig_4.cs" />
+    <Compile Include="Migrations\202503012148169_mig_4.Designer.cs">
+      <DependentUpon>202503012148169_mig_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202503012238090_mig_5.cs" />
+    <Compile Include="Migrations\202503012238090_mig_5.Designer.cs">
+      <DependentUpon>202503012238090_mig_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202503020948195_mig_yap.cs" />
+    <Compile Include="Migrations\202503020948195_mig_yap.Designer.cs">
+      <DependentUpon>202503020948195_mig_yap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202503021018592_mig_6.cs" />
+    <Compile Include="Migrations\202503021018592_mig_6.Designer.cs">
+      <DependentUpon>202503021018592_mig_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202503021038052_mig_7.cs" />
+    <Compile Include="Migrations\202503021038052_mig_7.Designer.cs">
+      <DependentUpon>202503021038052_mig_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202503021245391_mig_8.cs" />
+    <Compile Include="Migrations\202503021245391_mig_8.Designer.cs">
+      <DependentUpon>202503021245391_mig_8.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1283,6 +1317,44 @@
     <Content Include="Templates\login-form-15\scss\bootstrap\_variables.scss" />
     <Content Include="Templates\login-form-15\scss\style.scss" />
     <Content Include="Views\Login\AdminLogin.cshtml" />
+    <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\ProjectPartial.cshtml" />
+    <Content Include="Views\Default\HeadPartial.cshtml" />
+    <Content Include="Views\Default\NavbarPartial.cshtml" />
+    <Content Include="Views\Default\ModalPartial.cshtml" />
+    <Content Include="Views\Dashboard\StaffPartial.cshtml" />
+    <Content Include="Views\Dashboard\CustomerPartial.cshtml" />
+    <Content Include="Views\Dashboard\NotificationPartial.cshtml" />
+    <Content Include="Views\Default\TeamPartial.cshtml" />
+    <Content Include="Views\Default\SocialMediaPartial.cshtml" />
+    <Content Include="Views\Default\FeaturePartial.cshtml" />
+    <Content Include="Views\Default\ServicePartial.cshtml" />
+    <Content Include="Views\Default\AboutPartial.cshtml" />
+    <Content Include="Views\Default\ClientPartial.cshtml" />
+    <Content Include="Views\About\AboutList.cshtml" />
+    <Content Include="Views\About\CreateAbout.cshtml" />
+    <Content Include="Views\About\UpdateAbout.cshtml" />
+    <Content Include="Views\Category\CategoryList.cshtml" />
+    <Content Include="Views\Category\CreateCategory.cshtml" />
+    <Content Include="Views\Category\UpdateCategory.cshtml" />
+    <Content Include="Views\Project\UpdateProject.cshtml" />
+    <Content Include="Views\Team\TeamList.cshtml" />
+    <Content Include="Views\Team\CreateTeam.cshtml" />
+    <Content Include="Views\Team\UpdateTeam.cshtml" />
+    <Content Include="Views\Message\MessageList.cshtml" />
+    <Content Include="Views\Message\CreateMessage.cshtml" />
+    <Content Include="Views\Message\UpdateMessage.cshtml" />
+    <Content Include="Views\Notification\NotificationList.cshtml" />
+    <Content Include="Views\Notification\CreateNotification.cshtml" />
+    <Content Include="Views\Notification\UpdateNotification.cshtml" />
+    <Content Include="Views\Customer\CustomerList.cshtml" />
+    <Content Include="Views\Customer\CreateCustomer.cshtml" />
+    <Content Include="Views\Customer\UpdateCustomer.cshtml" />
+    <Content Include="Views\Default\MessagePartial.cshtml" />
+    <Content Include="Views\Default\MapPartial.cshtml" />
+    <Content Include="Views\Default\FooterPartial.cshtml" />
+    <Content Include="Views\Default\JSPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1339,6 +1411,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202502201139250_mig3.resx">
       <DependentUpon>202502201139250_mig3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503012148169_mig_4.resx">
+      <DependentUpon>202503012148169_mig_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503012238090_mig_5.resx">
+      <DependentUpon>202503012238090_mig_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503020948195_mig_yap.resx">
+      <DependentUpon>202503020948195_mig_yap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503021018592_mig_6.resx">
+      <DependentUpon>202503021018592_mig_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503021038052_mig_7.resx">
+      <DependentUpon>202503021038052_mig_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503021245391_mig_8.resx">
+      <DependentUpon>202503021245391_mig_8.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

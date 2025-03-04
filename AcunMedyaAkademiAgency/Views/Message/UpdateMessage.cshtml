@@ -1,0 +1,48 @@
+﻿@model  AcunMedyaAkademiAgency.Entities.Message
+@{
+    ViewBag.Title = "UpdateMessage";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Mesaj Güncelleme Sayfası</h4>
+            <p class="card-description">Mesajlar ile güncelleme işlemlerini buradan yapabilirsiniz.</p>
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label for="exampleInputName1">Id</label>
+                    @Html.TextBoxFor(x => x.MessageId, new { @class = "table table-bordered" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Adı Soyadı</label>
+                    @Html.TextBoxFor(x => x.NameSurname, new { @class = "table table-bordered" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Email</label>
+                    @Html.TextBoxFor(x => x.Email, new { @class = "table table-bordered" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Başlık</label>
+                    @Html.TextBoxFor(x => x.Title, new { @class = "table table-bordered" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea1">Mesaj Açıklaması</label>
+                    <textarea class="form-control"
+                              id="exampleTextarea1"
+                              rows="4" name="Description">@Model.Description</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Gönderim Tarihi</label>
+                    @Html.TextBoxFor(x => x.SendDate, new { @class = "table table-bordered" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Okundu Bilgisi</label>
+                    @Html.TextBoxFor(x => x.IsRead, new { @class = "table table-bordered" })
+                </div>
+                <button type="submit" class="btn btn-primary mr-2"> Güncelle </button>
+                <button class="btn btn-light">Vazgeç</button>
+            </form>
+        </div>
+    </div>
+</div>

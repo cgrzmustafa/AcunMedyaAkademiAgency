@@ -2,7 +2,7 @@
     <div class="text-center sidebar-brand-wrapper d-flex align-items-center">
         <a class="sidebar-brand brand-logo" href="index.html"><img src="/Templates/Breeze-Free-Bootstrap-Admin-Template-1.0.0/template/assets/images/logo.svg" alt="logo" /></a>
         <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="/Templates/Breeze-Free-Bootstrap-Admin-Template-1.0.0/template/assets/images/logo-mini.svg" alt="logo" /></a>
-    </div>
+    </div> 
     <ul class="nav">
         <li class="nav-item nav-profile">
             <a href="#" class="nav-link">
@@ -15,17 +15,17 @@
                     <span class="font-weight-medium mb-2">@ViewBag.profile</span>
                     <span class="font-weight-normal"></span>
                 </div>
-                <span class="badge badge-danger text-white ml-3 rounded">3</span>
+                <span class="badge badge-danger text-white ml-3 rounded"></span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="~/Dashboard/Index">
                 <i class="mdi mdi-home menu-icon"></i>
                 <span class="menu-title">Dashboard</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" href="~/Category/CategoryList">
                 <i class="mdi mdi-folder menu-icon"></i>
                 <span class="menu-title">Kategoriler</span>
                 <i class="menu-arrow"></i>
@@ -33,46 +33,54 @@
 
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/icons/mdi.html">
-                <i class="mdi mdi-animation menu-icon"></i>
-                <span class="menu-title">Öne Çıkanlar</span>
+            <a class="nav-link" href="~/Customer/CustomerList">
+                <i class="mdi mdi-account-check  menu-icon"></i>
+                <span class="menu-title">Müşteriler</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/forms/basic_elements.html">
+            <a class="nav-link" href="~/Service/ServiceList">
                 <i class="mdi mdi-calendar menu-icon"></i>
                 <span class="menu-title">Hizmetler</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/charts/chartjs.html">
+            <a class="nav-link" href="~/Project/ProjectList">
                 <i class="mdi mdi-clipboard-check menu-icon"></i>
                 <span class="menu-title">Projeler</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/tables/basic-table.html">
+            <a class="nav-link" href="~/Team/TeamList">
                 <i class="mdi mdi-account menu-icon"></i>
                 <span class="menu-title">Personeller</span>
             </a>
         </li>
         <li class="nav-item">
-            <span class="nav-link" href="#">
+            <a class="nav-link" href="~/About/AboutList">
                 <i class="mdi mdi-information menu-icon"></i>
-                <span class="menu-title">Hakkımda</span>
-            </span>
+                <span class="menu-title">Hakkımızda</span>
+            </a>
         </li>
         <li class="nav-item">
-            <span class="nav-link" href="#">
+            <a class="nav-link" href="~/Message/MessageList">
                 <i class="mdi mdi-message menu-icon"></i>
                 <span class="menu-title">Mesajlar</span>
-            </span>
+            </a>
         </li>
         <li class="nav-item">
-            <span class="nav-link" href="#">
+            <a class="nav-link" href="~/Notification/NotificationList">
                 <i class="mdi mdi-bell menu-icon"></i>
                 <span class="menu-title">Bildirimler</span>
-            </span>
-        </li>     
-
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="~/Login/AdminLogin">
+                <i class="mdi mdi-logout  menu-icon"></i>
+                <span class="menu-title">Çıkış Yap</span>
+            </a>
+        </li>
+    </ul>
 </nav>
+
+

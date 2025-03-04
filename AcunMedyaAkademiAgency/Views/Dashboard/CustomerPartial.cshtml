@@ -1,0 +1,25 @@
+﻿@model List<AcunMedyaAkademiAgency.Entities.Customer>
+<div class="col-xl-4 col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title text-black">Son Müşteriler</h4>
+            <p class="text-muted">Tüm kişiler</p>
+            <div class="row pt-2 pb-1">
+                <div class="col-12 col-sm-7">
+                    @foreach (var item in Model)
+                    {
+                        <div class="row">
+                            <div class="col-4 col-md-4">
+                                <img class="customer-img" src="@item.ImageUrl" alt="" />
+                            </div>
+                            <div class="col-8 col-md-8 p-sm-0">
+                                <h6 class="mb-0">@item.NameSurname</h6>
+                                <p class="text-muted font-12">@item.Hour</p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+﻿@model List<AcunMedyaAkademiAgency.Entities.Notification>
+<div class="col-xl-4 grid-margin stretch-card">
+    <!--activity-->
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">
+                <span class="d-flex justify-content-between">
+                    <span>Bildirimler</span>
+                </span>
+            </h4>
+            <ul class="gradient-bullet-list border-bottom">
+                @foreach(var item in Model) 
+                { 
+                <li>
+                    <h6 class="mb-0"> @item.Description </h6>
+                    <p class="text-muted">@item.NameSurname</p>
+                </li>
+                }
+            </ul>
+            <a class="text-black mt-3 mb-0 d-block h6" href="#">Tümünü görüntüle<i class="mdi mdi-chevron-right"></i></a>
+        </div>
+    </div>
+    <!--activity ends-->
+</div>

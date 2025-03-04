@@ -1,0 +1,45 @@
+﻿@model List<AcunMedyaAkademiAgency.Entities.About>
+
+<section class="page-section" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Hakkımızda</h2>
+            <h3 class="section-subheading text-muted">
+                Yaratıcı çözümler ve stratejilerle markalarınıza dijital dünyada güçlü bir yer sağlıyoruz.
+                E-ticaret, dijital pazarlama, UX/UI tasarımı ve sosyal medya yönetimi gibi hizmetlerle,
+                her müşterimize özel çözümler sunuyoruz. Amacımız, markanızı öne çıkaran projelerle başarıya ulaşmanızı sağlamak.
+            </h3>
+        </div>
+        <ul class="timeline">
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                var item = Model[i];
+                var isInverted = i % 2 != 0 ? "timeline-inverted" : ""; // Çift indeksler sola, tek indeksler sağa
+                <li class="@isInverted">
+                    <div class="timeline-image" style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden;">
+                        <img class="rounded-circle img-fluid" src="@item.ImageUrl" alt="..." style="width: 100%; height: 100%; object-fit: cover;" />
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>@item.Title</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">@item.Description</p></div>
+                    </div>
+                </li>
+            }
+            <li class="timeline-inverted">
+                <div class="timeline-image" style="background-color: #f2f2f2;">
+                    <h4 style="color: #333;">
+                        Hikayemizin
+                        <br />
+                        Bir
+                        <br />
+                        Parçası
+                        <br />
+                        Olun!
+                    </h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>

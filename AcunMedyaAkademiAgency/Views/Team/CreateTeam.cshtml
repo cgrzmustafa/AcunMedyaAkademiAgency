@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "CreateTeam";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Personel Ekleme Sayfası</h2>
+
+<form method="post">
+    <label>Personel Adı Soyadı</label>
+    <input type="text" class="form-control" name="NameSurname" />
+    <br />
+    <label>Personel Resmi</label>
+    <input type="text" class="form-control" name="ImageUrl" />
+    <br />
+    <label>Personel Cinsiyeti</label>
+    <input type="text" class="form-control" name="Gender" />
+    <br />
+    <label>Personel Şehri</label>
+    <input type="text" class="form-control" name="City" />
+    <br />
+    <label>Personel Departmanı</label>
+    <input type="text" class="form-control" name="BranchId" />
+    <br />
+    <button class="btn btn-danger">Personeli Kaydet</button>
+</form>
+

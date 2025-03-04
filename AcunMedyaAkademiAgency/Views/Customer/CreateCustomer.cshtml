@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "CreateCustomer";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Müşteri Ekleme Sayfası</h2>
+
+<form method="post">
+    <label>Adı Soyadı</label>
+    <input type="text" class="form-control" name="NameSurname" />
+    <br />
+    <label>Müşteri Resmi</label>
+    <input type="text" class="form-control" name="ImageUrl" />
+    <br />
+    <label>Katılım Tarihi</label>
+    <textarea rows="4" class="form-control" name="Hour"></textarea>
+    <br />
+    <button class="btn btn-danger">Müşteriyi Kaydet</button>
+</form>
+

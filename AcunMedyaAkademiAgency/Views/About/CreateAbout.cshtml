@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "CreateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Hakkında Ekleme Sayfası</h2>
+
+<form method="post">
+    <label>Hakkında Adı</label>
+    <input type="text" class="form-control" name="Title" />
+    <br />
+    <label>Hakkında Resmi</label>
+    <input type="text" class="form-control" name="ImageUrl" />
+    <br />
+    <label>Hakkında Açıklaması</label>
+    <textarea rows="4" class="form-control" name="Description"></textarea>
+    <br />
+    <button class="btn btn-danger">Hakkındayı Kaydet</button>
+</form>
+

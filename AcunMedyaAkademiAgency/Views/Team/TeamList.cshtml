@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "TeamList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Personeller Sayfası</h4>
+            <p class="card-description">
+                Personeller ile ilgili işlemleri buradan yapabilirsiniz.
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Adı Soaydı</th>
+                            <th>Resmi</th>
+                            <th>Cinsiyeti</th>
+                            <th>Şehri</th>
+                            <th>Departmanı</th>
+                            <th>Sil</th>
+                            <th>Güncelle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            count++;
+                            <tr>
+                                <td>@count</td>
+                                <td>@item.NameSurname</td>
+                                <td><img src="@item.ImageUrl" style="width:75px;height:75px;" alt="Personel Görseli" /></td>
+                                <td>@item.Gender</td>
+                                <td>@item.City</td>
+                                <td>@item.BranchId</td>
+                                <td><a class="btn btn-danger" href="/Team/DeleteTeam/@item.TeamId"><i class="fa fa-trash"></i>Sil</a></td>
+                                <td><a class="btn btn-success" href="/Team/UpdateTeam/@item.TeamId"><i class="fa fa-pencil"></i>Güncelle</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="/Team/CreateTeam" class="btn btn-info"><i class="mdi mdi-file-check btn-icon-append">Yeni Personel Girişi</i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
