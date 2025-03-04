@@ -29,7 +29,32 @@ Bu proje, ajans kurumları için iş süreçlerini kolaylaştırmayı hedeflemek
 
 # **PROJEDEN KARELER**
 
-![Proje resmi](https://i.hizliresim.com/75l0qhu.png?_gl=1*1s7urff*_ga*MTY3Mzc4NjA5OS4xNzM2NTIyMTI0*_ga_M9ZRXYS2YN*MTc0MTExNjg1MC41LjEuMTc0MTExNjk1MS4yNi4wLjA.)
+![Proje resmi](AcunMedyaAkademiAgency/images/UI1.png)
+---
+![Proje resmi](AcunMedyaAkademiAgency/images/UI2.png)
+---
+![Proje resmi](AcunMedyaAkademiAgency/images/UI3.png)
+---
+![Proje resmi](AcunMedyaAkademiAgency/images/UI4.png)
+---
+![Proje resmi](AcunMedyaAkademiAgency/images/UI5.png)
+---
+![Proje resmi](AcunMedyaAkademiAgency/images/UI6.png)
+---
+![Proje resmi](AcunMedyaAkademiAgency/images/UI7.png)
+---
+![Proje resmi](AcunMedyaAkademiAgency/images/UI8.png)
+---
+![Proje resmi](AcunMedyaAkademiAgency/images/UI9.png)
+---
+![Proje resmi](AcunMedyaAkademiAgency/images/Admin1.png)
+---
+![Proje resmi](AcunMedyaAkademiAgency/images/Admin2.png)
+---
+![Proje resmi](AcunMedyaAkademiAgency/images/Admin3.png)
+---
+![Proje resmi](AcunMedyaAkademiAgency/images/Admin4.png)
+---
 
 
 
