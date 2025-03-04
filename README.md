@@ -29,6 +29,7 @@ Bu proje, ajans kurumları için iş süreçlerini kolaylaştırmayı hedeflemek
 
 # **PROJEDEN KARELER**
 
+![Proje resmi](https://i.hizliresim.com/75l0qhu.png?_gl=1*1s7urff*_ga*MTY3Mzc4NjA5OS4xNzM2NTIyMTI0*_ga_M9ZRXYS2YN*MTc0MTExNjg1MC41LjEuMTc0MTExNjk1MS4yNi4wLjA.)
 
 
 
