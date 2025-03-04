@@ -234,6 +234,14 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="images\UI1.png" />
+    <Content Include="images\UI2.png" />
+    <Content Include="images\UI3.png" />
+    <Content Include="images\UI4.png" />
+    <Content Include="images\UI5.png" />
+    <Content Include="images\UI6.png" />
+    <Content Include="images\UI7.png" />
+    <Content Include="images\UI8.png" />
+    <Content Include="images\UI9.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
