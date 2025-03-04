@@ -39,8 +39,6 @@ Bu proje, ajans kurumları için iş süreçlerini kolaylaştırmayı hedeflemek
 ---
 ![Proje resmi](AcunMedyaAkademiAgency/images/UI5.png)
 ---
-![Proje resmi](AcunMedyaAkademiAgency/images/UI6.png)
----
 ![Proje resmi](AcunMedyaAkademiAgency/images/UI7.png)
 ---
 ![Proje resmi](AcunMedyaAkademiAgency/images/UI8.png)
