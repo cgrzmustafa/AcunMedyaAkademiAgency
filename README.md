@@ -16,6 +16,7 @@ Bu proje, ajans kurumları için yönetilebilir ve sürdürülebilir bir web sit
 - 🧭 **Code First Yaklaşımı – Veritabanı modellemesi için**
 - 🔍 **LINQ Sorguları – Veritabanı işlemlerini kolaylaştırmak için**
 - 🗂️ **Layout Kontrolü – Sayfa düzenlerinin yönetimi için**
+- ✅ **Session Yönetimi - Kullanıcı deneyimini iyileştirmek için**
 
 ## 🔹 Proje Özellikleri
 
